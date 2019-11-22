@@ -8,10 +8,10 @@ if sys.executable != INTERP:
 
 cwd = os.getcwd()
 sys.path.append(cwd)
-sys.path.append(cwd + '/blogsite_project/blogsite')  #You must add your project here
+sys.path.append(cwd + '/wagfront_project/blogsite')  #You must add your project here
 
 sys.path.insert(0, cwd + '/env/bin')
-sys.path.insert(0, cwd + '/env/lib/python3.6/site-packages')
+sys.path.insert(0, cwd + '/env/lib/python3.7/site-packages')
 
 os.environ['DJANGO_SETTINGS_MODULE'] = "blogsite.settings.production"
 from django.core.wsgi import get_wsgi_application
